@@ -1,0 +1,108 @@
+.approach {
+  &__top {
+    padding: 80px;
+    background-color: #F7F8F8;
+  }
+
+  &__left {
+    padding-top: 33px;
+    grid-column: 5 span;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+    grid-column: 7 / 6 span;
+    gap: 8px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+    color: #003331;
+    margin-bottom: 13px;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 37px;
+    font-weight: 400;
+    font-size: var(--second-size);
+    line-height: 24px;
+    color: var(--text-color);
+  }
+
+  &__btn {
+    padding: 16px 34px;
+    border: 1px solid rgba(53, 83, 98, 0.2);
+    color: #00413e;
+  } 
+
+  &__bottom {
+    padding: 24px 0;
+    background-color: var(--light-color);
+  }
+
+  &__item {
+    grid-column: 2 span;
+  }
+
+  &__link {
+    display: block;
+    border-top: 1px solid var(--text-color);
+    padding-top: 17px;
+    padding-left: 32px;
+    font-weight: 400;
+    font-size: var(--second-size);
+    line-height:24px;
+    color: var(--text-color);
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: left top 15px;
+
+    @include hover {
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+  
+    &:focus {
+      outline: none;
+    }
+  
+    &:active {
+      color: var(--active-color);
+      border-color: var(--active-color);
+    }
+
+    &--ted {
+      background-image: url("../img/approach-icon-1.png");
+    }
+
+    &--new-york {
+      background-image: url("../img/approach-icon-2.png");
+    }
+
+    &--state {
+      background-image: url("../img/approach-icon-3.png");
+    }
+
+    &--press {
+      background-image: url("../img/approach-icon-4.png");
+    }
+
+    &--time {
+      background-image: url("../img/approach-icon-5.png");
+    }
+
+    &--freethink {
+      background-image: url("../img/approach-icon-6.png");
+    }
+  }
+
+  .approach__link.focus-visible {
+    border-color: var(--active-color);
+  }
+}

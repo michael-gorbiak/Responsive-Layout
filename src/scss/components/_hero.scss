@@ -1,0 +1,80 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding-top: 190px;
+  padding-bottom: 40px;
+  min-height: 776px;
+  color: var(--light-color);
+  background-image: url("../img/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__content {
+    grid-column: 6 span;
+  }
+
+  &__title {
+    font-family: var(--second-family);
+    margin: 0;
+    margin-bottom: 29px;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 44px;
+    letter-spacing: 1.2px;
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 29px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height:28px;
+  }
+
+  &__bottom-container {
+    width: 100%;
+    margin-top: auto;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: var(--second-size);
+    line-height: 24px;
+  }
+
+  &__item {
+    grid-column: 2 span;
+  }
+
+  &__link {
+    display: block;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    padding-top: 17px;
+    font-weight: 400;
+    font-size: var(--second-size);
+    line-height:24px;
+    color: var(--light-color);
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+    @include hover {
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+  
+    &:focus {
+      outline: none;
+    }
+  
+    &:active {
+      color: var(--active-color);
+      border-color: var(--active-color);
+    }
+  }
+
+  .hero__link.focus-visible {
+    border-color: var(--active-color);
+  }
+}

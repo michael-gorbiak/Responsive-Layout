@@ -1,0 +1,48 @@
+.header {
+  padding: 17px 0;
+
+  &__container {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--position {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10px;
+  }
+}
+
+.nav {
+  align-items: center;
+  padding-right: 16px;
+  &__list {
+    align-items: center;
+    margin-right: 32px;
+    gap: 51px;
+  }
+  &__link {
+    font-size: var(--main-size);
+    color: var(--light-color);
+    transition: color 0.3s ease-in-out;
+
+    @include hover {
+      color: var(--accent-color);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      color: var(--active-color);
+    }
+  }
+}
+
+.nav-link.focus-visible {
+  outline: 1ps solid var(--active-color);
+  outline-offset: 3px;
+}

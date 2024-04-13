@@ -1,0 +1,20 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "PublicSans", sans-serif;
+  --second-family: "LibreBaskerville", sans-serif;
+  --content-width: 1152px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --offset: 32px;
+
+  // sizes
+  --main-size: 13px;
+  --second-size: 15px;
+  // colors
+  --light-color: #fff;
+  --accent-color: #fcc220;
+  --active-color: #EAA718;
+  --text-color: rgba(53, 83, 57, 0.8)
+}
