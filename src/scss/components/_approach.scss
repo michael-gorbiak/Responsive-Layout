@@ -7,6 +7,10 @@
   &__left {
     padding-top: 33px;
     grid-column: 5 span;
+
+    @include big-desktop {
+      margin-bottom: var(--offset);
+    }
   }
 
   &__right {
@@ -14,6 +18,11 @@
     justify-content: flex-end;
     grid-column: 7 / 6 span;
     gap: 8px;
+
+    @include big-desktop {
+      grid-column: 12 span;
+      justify-content: flex-start;
+    }
   }
 
   &__title {
@@ -38,7 +47,7 @@
     padding: 16px 34px;
     border: 1px solid rgba(53, 83, 98, 0.2);
     color: #00413e;
-  } 
+  }
 
   &__bottom {
     padding: 24px 0;
@@ -67,11 +76,11 @@
       color: var(--accent-color);
       border-color: var(--accent-color);
     }
-  
+
     &:focus {
       outline: none;
     }
-  
+
     &:active {
       color: var(--active-color);
       border-color: var(--active-color);

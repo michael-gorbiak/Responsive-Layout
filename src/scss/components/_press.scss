@@ -1,0 +1,127 @@
+.press {
+  padding-top: 87px;
+  background-color: var(--ligh-color);
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 33px;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 38px;
+    letter-spacing: 1.2px;
+    color: #003331;
+  }
+
+  &__link {
+    color: #00413E;
+    border: 1px solid rgba(53, 83, 98, 0.2);
+    border-radius: 80px;
+
+    @include hover {
+      border-color: var(--accent-color);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      color: var(--active-color);
+      border-color: var(--active-color);
+    }
+  }
+
+  &__list {
+    row-gap: var(--offset);
+  }
+
+  &__item {
+    grid-column: 4 span;
+  }
+}
+
+.press-card {
+  border-top: 1px solid rgba(53, 83, 98, 0.3);
+  position: relative;
+  padding-top: 16px;
+  min-height: 145px;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 11px;
+  }
+
+  &__author {
+    margin: -18px 0;;
+    padding: 18px 0;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--text-color);
+    padding-left: 32px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: left top 15px;
+
+    &--ted {
+      background-image: url("../img/approach-icon-1.png");
+    }
+
+    &--nyt {
+      background-image: url("../img/approach-icon-2.png");
+    }
+
+    &--cor {
+      background-image: url("../img/press-3.png");
+    }
+
+    &--cor1 {
+      background-image: url("../img/press-4.png");
+    }
+
+    &--doj {
+      background-image: url("../img/press-5.png");
+    }
+
+    &--right {
+      background-image: url("../img/press-6.png");
+    }
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: var(--text-color);
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    color: #00413E;
+  }
+
+  &__link {
+    color: inherit;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
+  }
+}

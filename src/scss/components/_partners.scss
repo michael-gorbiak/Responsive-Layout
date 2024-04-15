@@ -1,0 +1,49 @@
+.partners {
+  padding: 16px 0;
+
+  &__container {
+    align-items: center;
+    gap: 6px;
+
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__list {
+    gap: 12px;
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: var(--text-color);
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__more {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+    color: var(--text-color);
+  }
+}

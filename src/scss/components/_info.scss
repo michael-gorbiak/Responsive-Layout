@@ -13,6 +13,10 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @include tablet {
+    display: none;
+  }
 }
 
 &::after {
@@ -24,6 +28,10 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @include tablet {
+    display: none;
+  }
 }
 
   &__content {
