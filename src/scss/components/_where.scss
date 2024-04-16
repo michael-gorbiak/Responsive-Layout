@@ -4,12 +4,25 @@
   color: var(--light-color);
   background-color: #001f1f;
 
+  @include mobile {
+    padding: 45px;
+  }
+
   &__content {
     grid-column: 4 span;
+
+    @include mobile {
+      grid-column: 12 span;
+      margin-bottom: 48px;
+    }
   }
 
   &__map {
     grid-column: 8 / 5 span;
+
+    @include mobile {
+      grid-column: 12 span;
+    }
   }
 
   &__title {

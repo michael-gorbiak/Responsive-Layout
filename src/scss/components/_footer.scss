@@ -10,6 +10,14 @@
 
     &:last-child {
       grid-column: 11 / 2 span;
+
+      @include mobile {
+        grid-column: 3 span;
+      }
+    }
+
+    @include mobile {
+      grid-column: 3 span;
     }
   }
 

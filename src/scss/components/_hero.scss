@@ -12,6 +12,10 @@
 
   &__content {
     grid-column: 6 span;
+
+    @include mobile {
+      grid-column: 12 span;
+    }
   }
 
   &__container {
@@ -56,6 +60,11 @@
 
   &__item {
     grid-column: 2 span;
+
+    @include mobile {
+      grid-column: 6 span;
+      margin-bottom: 14px;
+    }
   }
 
   &__link {

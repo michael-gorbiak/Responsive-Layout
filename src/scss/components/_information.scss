@@ -3,6 +3,11 @@
   padding-bottom: 140px;
   &__text {
     grid-column: 6 span;
+
+    @include mobile {
+      grid-column: 12 span;
+      margin-bottom: 32px;
+    }
   }
 
   &__title {
@@ -14,6 +19,10 @@
     line-height: 38px;
     letter-spacing: 1.2px;
     color: #003331;
+
+    @include mobile {
+      max-width: none;
+    }
   }
 
   &__list {
@@ -22,6 +31,10 @@
     row-gap: 36px;
     column-gap: var(--offset);
     grid-template-columns: repeat(6, 1fr);
+
+    @include mobile {
+      grid-column: 12 span;
+    }
   }
 
   &__item {

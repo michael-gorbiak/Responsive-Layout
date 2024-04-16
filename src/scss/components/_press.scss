@@ -2,6 +2,10 @@
   padding-top: 87px;
   background-color: var(--ligh-color);
 
+  @include mobile {
+    padding-top: 47px;
+  }
+
   &__top {
     display: flex;
     justify-content: space-between;
@@ -44,6 +48,10 @@
 
   &__item {
     grid-column: 4 span;
+
+    @include mobile {
+      grid-column: 6 span;
+    }
   }
 }
 
